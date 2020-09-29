@@ -190,6 +190,13 @@ a{
     display:inline-block;
     margin: 30px 0 5px 30px;
 }
+.card-accommodations{
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5em;
+}
 aside{
     background-color: 	#ececec;
     width: 100%;
@@ -245,7 +252,6 @@ header{
     padding: 5px 13px;
     justify-content: space-between;
 }
-}
 .cards{
     margin: 20px 20px;
     display: flex;
@@ -253,6 +259,7 @@ header{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
 }
 .show-more h3{
     
