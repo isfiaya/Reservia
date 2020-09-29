@@ -120,7 +120,7 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 25px 0 20px 0;
-    gap:10px;
+    gap: 10px;
     
 }
 .filter{
@@ -352,6 +352,7 @@ header{
     border-radius: 40px;
     outline: none;
     background-color: white;
+    margin: 0 12px;
 }
 #accommodations-btn a{
     border-top-color: #1E90FF;
