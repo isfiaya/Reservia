@@ -97,6 +97,9 @@ a{
     margin: 0 0 0 -10px;
     border:none;
 } 
+.activites-description {
+    padding: 10px 16px;
+}
 .input{
     width: 200px;
     outline:none;
@@ -208,9 +211,9 @@ aside{
     grid-area: aside;
 }
 .Activities{
-    background-color:white;
+    background-color: white;
     width: 100%;
-    height:80vh;
+    height: 76vh;
     border-radius: 20px;
     grid-area: Activities;
 }
@@ -353,8 +356,9 @@ header{
 .checked{
     color: cornflowerblue;
 }
-.section-title-3 h3{
-    margin: 15px 0 15px 30px;
+.section-title-3{
+    margin: 15px 0 22px 20px;
+    font-weight: 700;
 }
 .btn-filter{
     border: 1px solid #ddd;
