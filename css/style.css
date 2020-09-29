@@ -16,8 +16,8 @@
     grid-template-areas: 
             "nav nav"
             "header header"
-            "section-1 aside"
-            "section-2 section-2"
+            "Accommodations aside"
+            "Activities Activities"
             "footer footer";
     grid-gap: 0.9rem;        
 }
@@ -179,12 +179,12 @@ a{
     vertical-align: middle;
     margin: 10px;
 }
-.section-1{
+.Accommodations{
     width: 92%;
     background-color: 	#ececec;
     height:100vh;
     border-radius: 20px;
-    grid-area: section-1;
+    grid-area: Accommodations;
 }
 .section-title{
     display:inline-block;
@@ -199,12 +199,12 @@ aside{
     flex-direction: column;
     grid-area: aside;
 }
-.section-2{
+.Activities{
     background-color:white;
     width: 100%;
     height:80vh;
     border-radius: 20px;
-    grid-area: section-2;
+    grid-area: Activities;
 }
 footer{
     background-color: 	#ececec;
@@ -239,9 +239,12 @@ header{
     margin: auto;
     padding-top: 3px;
 }
-.card-description{
-    padding: 10px 16px;
-    line-height: 1.6;
+.aside-description{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 13px;
+    justify-content: space-between;
+}
 }
 .cards{
     margin: 20px 20px;
@@ -260,18 +263,18 @@ header{
     flex-direction: column;
     justify-content: center;
 }
-.card-2{
-    width: 90%;
-    height: 130px;
+.card-aside{
+    width: 80%;
+    height: 140px;
     background-color: white;
-    border: white solid 3px;
     border-radius: 20px;
-    margin: 20px 10px;
-    display:flex;
+    margin: 10px 25px 10px 35px;
+    display: flex;
     flex-direction: row;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
+    border: white solid 3px;
 }
-.card-2 img{
+.card-aside img{
     width: 40%;
     height: 98%;
     border-top-left-radius: 20px;
@@ -377,7 +380,7 @@ header{
     justify-content:space-between;
     width: 85%;
 }
-.card-2:hover{
+.card-aside:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 @media only screen and (max-width:767px){
@@ -418,7 +421,7 @@ header{
     }
 }
 @media only screen and (max-width:767px){
-    .section-2{
+    .Activities{
         height:1520px;
         border: brown solid 2px;
         display: flex;
@@ -438,7 +441,7 @@ header{
     } 
 }
 @media only screen and (max-width:767px){
-    .section-1{
+    .Accommodations{
         border: violet solid 2px;
         height: fit-content;
         display: flex;
