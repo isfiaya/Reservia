@@ -16,12 +16,11 @@
     grid-template-areas: 
             "nav nav"
             "header header"
-            "Accommodations aside"
-            "Activities Activities"
+            "accommodations aside"
+            "activities activities"
             "footer footer";
-    grid-gap: 0.9rem;        
+    grid-gap: 0.5rem;        
 }
-
 nav{
     grid-area: nav;
     height: 10vh;
@@ -58,16 +57,19 @@ nav{
     color:#1E90FF;
     font-weight: bold;
 }
+.sign-up2{
+    display: none;
+}
 a{
     text-decoration: none;
-    font-weight: bold;
     color: inherit;
 }
-.descrption{
+.description{
     display: flex;
     flex-direction:column;
-    margin: 10px 0px;
-    height: 50px;
+    height: fit-content;
+    line-height: 1.3;
+    margin-bottom: 22px;
 }
 
 .desc_2{
@@ -86,7 +88,7 @@ a{
     flex-direction: row;
     border: none;
 }    
-.serach-btn{
+.serach-btn1{
     background-color:  #0065FC;
     color: white;
     outline: none;
@@ -97,8 +99,8 @@ a{
     margin: 0 0 0 -10px;
     border:none;
 } 
-.activites-description {
-    padding: 10px 16px;
+.serach i{
+    display: none;
 }
 .input{
     width: 200px;
@@ -110,11 +112,12 @@ a{
     
 }
 .serach img{
+    
     width: 27px;
-    background-color: #ececec;
+    background-color:#ececec;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: none;
+    border:none;
     padding: 11px;
 }
 .filter-bar{
@@ -122,7 +125,8 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 25px 0 20px 0;
-    gap: 10px;
+    gap:10px;
+    
     
 }
 .filter{
@@ -160,6 +164,7 @@ a{
   .info{
       
       display: flex;
+      align-items: center;
     
   }
 .info-icon{
@@ -173,71 +178,64 @@ a{
     border-radius: 20px;
     padding: 5px;
     
-    vertical-align: middle;
 }  
 .info-content{
-
     display:inline-block;
-    width: 380px;
+    width: fit-content;
     margin: auto;
-    vertical-align: middle;
     margin: 10px;
 }
-.Accommodations{
+.accommodations{
     width: 97%;
     background-color: 	#ececec;
-    height:37em;
+    height:100vh;
     border-radius: 20px;
-    grid-area: Accommodations;
+    grid-area:accommodations;
 }
 .section-title{
     display:inline-block;
     margin: 30px 0 5px 30px;
-}
-.card-accommodations{
-    padding: 10px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 5em;
+    font-weight: 700;
 }
 aside{
     background-color: 	#ececec;
     width: 100%;
-    height:37em;
+    height:100vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     grid-area: aside;
 }
-.Activities{
-    background-color: white;
+
+.activities{
+    background-color:white;
     width: 100%;
-    height: 76vh;
+    height:76vh;
     border-radius: 20px;
-    grid-area: Activities;
+    grid-area:activities;
 }
 footer{
     background-color: 	#ececec;
-    width: 100%;
-    height:30vh;
+    width: 104%;
+    height:fit-content;
     grid-area: footer;
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    margin-left: -28px;
 }
 header{
     grid-area: header;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    
 }
 .card{
     width: 30%;
     background-color: white;
     border-radius: 20px;
     margin: 10px 0px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
     height: 200px;
     
 }
@@ -250,11 +248,22 @@ header{
     margin: auto;
     padding-top: 3px;
 }
+.card-accommodations{
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5em;
+}
 .aside-description{
     display: flex;
     flex-direction: column;
     padding: 5px 13px;
     justify-content: space-between;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
 }
 .cards{
     margin: 20px 20px;
@@ -263,13 +272,12 @@ header{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-
 }
-.show-more h3{
+.show-more{
     
     margin: 10px 0 10px 30px;
 }
-.cards2{
+.cards-aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,17 +288,19 @@ header{
     background-color: white;
     border-radius: 20px;
     margin: 10px 25px 10px 35px;
-    display: flex;
+    display:flex;
     flex-direction: row;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
-    border: white solid 3px;
+    border:white solid 3px;
+    
 }
 .card-aside img{
     width: 40%;
-    height: 98%;
+    height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
 .cards-activities{
     display: grid;
     grid-template-columns:repeat(4,25%);
@@ -300,32 +310,39 @@ header{
     "item1 item2 item4 item5"
     "item1 item3 item4 item6"  
 }
-.card-3{
+.card-activities{
     height: 60vh;
     background-color: white;
     margin: 0px 20px;
     border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
 }
-.card-3 a img{
+.card-activities a img{
     width: 100%;
     height: 85%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     
 }
+.acc_title{
+    margin: 18px 0px 0px 30px;
+ }
 .card-3v2{
     height: 30vh;
     background-color: white;
     margin: 0px 20px;
     border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
 }
 .card-3v2 img{
     width: 100%;
     height: 75%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+.activities-description{
+    padding: 10px 16px;
+
 }
 .footer-content{
     
@@ -367,7 +384,7 @@ header{
     background-color: white;
     margin: 0 12px;
 }
-#accommodations-btn a{
+.accommodations-btn {
     border-top-color: #1E90FF;
     border-top-style: solid;
     padding-top: 20px;
@@ -379,7 +396,7 @@ header{
 .card:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.card-3:hover{
+.card-activities:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .card-3v2:hover{
@@ -391,6 +408,7 @@ header{
     align-items:baseline;
     justify-content:space-between;
     width: 85%;
+    font-weight: 700;
 }
 .card-aside:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -401,60 +419,72 @@ header{
         height: 100%;
         padding-right: 15px;
         padding-left: 15px;
-        border: steelblue solid 2px;
         display: flex;
         flex-direction: column;
     }
     footer{
         display:flex;
         flex-direction: column;
-        width: 100%;
+        width: 108%;
         height: auto;
-        margin: auto;
+        margin: -44PX 0px 0px -15px;
         order: 6;
+        
     }
     
     .section-title-3{
         font-size: large;
-        font-weight: bold;
-        margin: 30px 0 5px 30px;
+    margin: 3px 0 6px 0px;
 
     }
     aside{
-        border: teal solid 2px;
-        width:fit-content;
-        height: fit-content;
-        margin:0 1%;
+        
+        width:108%;
+        height: 37em;
+        margin:0 -4%;
         order: 3;
         border-radius: 0px;
     }
-    .cards2{
+    .cards-aside{
         align-items: center;
+    }
+    .btn-filter{
+        margin: 7px 7px;
+    }
+    .card-aside{
+        box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
+        width: 86%;
     }
 }
 @media only screen and (max-width:767px){
-    .Activities{
-        height:1520px;
-        border: brown solid 2px;
+    .activities{
+        height:1435px;
         display: flex;
         flex-direction: column;
         order: 5;
+       
     }
-    .cards-3{
+    .cards-activities{
         display: flex;
         flex-direction: column;
         gap: 40px;
+        margin-top: 23px;
     }
-    .card-3{
+    .card-activities{
         height: 200px;
+        box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
     }
-    .card-3 a img{
+    .card-activities a img{
         height: 75%;
     } 
+    .card-3v2{
+        box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
+    }
+
 }
 @media only screen and (max-width:767px){
-    .Accommodations{
-        border: violet solid 2px;
+    .accommodations{
+        
         height: fit-content;
         display: flex;
         flex-direction: column;
@@ -468,52 +498,60 @@ header{
        
     }
     .card{
-        width: 100%;
+        width: 109%;
+        box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
+        margin: 10PX 0px 0px -15px;
     }
     .section-title{
         font-size: large;
     }
+    .acc_title{
+       margin: 15px 0px -4px 0px;
+    }
 }
 @media only screen and (max-width:767px){
   nav{
-      border: yellow solid 2px;
+      
       order: 1;
       display: flex;
       height: fit-content;
-      flex-wrap:  row wrap;
+      flex-wrap: wrap;
+  }
+  .logo{
+      width: 100px;
+      height: 40px;
+      display: inline;
   }
   header{
-      border: black solid 2px;
+      
       order: 2;
       
   }
-  .descrption{
-      border: aqua solid 2px;
-      height: fit-content;
+  .description{
+
+    height: fit-content;
+    line-height: 1.3;
+    margin-bottom: 22px;
   }
   .serach{
-      border: blueviolet solid 2px;
+      
       display: flex;
   }
-  .filter-bar{
-      border: chocolate solid 2px;
+  .serach img{
+      width: 22px;
+      padding: 12px;
+      border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
-  .info{
-      border: darkgreen solid 2px;
-  }
-
 .filter{
-    border: tomato solid 2px;
+    
     margin: 0;
     }
-.filter h3{
-    font-size: x-large;
-    }
+
 .buttons{
-    border: yellow solid 2px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+   
     }
 .desc_1{
     font-size: x-large;
@@ -523,8 +561,74 @@ header{
     }
 .footer-content{
     width: fit-content;
-    margin: 15px 0 10px 20px;
+    margin: 15px 0 15px 30px;
     }
+.serach-btn1{
+        display: none;
+    }
+.serach i{
+    display:inline;
+    background-color:  #0065FC;
+    color: white;
+    outline: none;
+    font-size: 17px;
+    padding: 10px 10px 0px 15px;
+    border-radius:12px;
+    border:none;
+    height: initial;
+    width: 22px;
+}    
+.sign-up{
+    display: none;
+}
+.sign-up2{
+    display: inline;
+    width: 71px;
+    height:initial;
+    padding: 11px;
+    padding-top: 18px;
+    margin-left: 170px;
+    color:#1E90FF;
+    font-weight: 900;
+}
+.activities-btn{
+    border-bottom-color: #ddd;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: 32%;
+    margin: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.nav-bar{
+    margin:auto;
+}
+.accommodations-btn{
+    border-bottom-color: #1E90FF;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-top-style:none;
+    font-size: 14px;
+    color: #1E90FF;    
+    width: 34%;
+    text-align: center;
+}
+.nav-bar ul{
+    display: flex;
+    gap:0px;
+  
+}
+.nav-bar ul li{
+    padding: 0px 34px 16px 27Px;
+    margin: 24px 0px -11px 0px;
+    font-size: 15px;
+}
+.card-activities{
+    margin: -7PX 5px 0px 5px;
+}
+.card-3v2{
+    margin: -7PX 5px 0px 5px;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px)
 {
@@ -611,4 +715,31 @@ footer{
     line-height: 1.3;
     margin-bottom: 22px;
 }
+}
+
+@media only screen and (min-width: 992px)/*(max-width:1023)*/{
+    .card-accommodations{
+        padding: 5px 7px;
+
+    }  
+    aside{
+        height: 86vh;
+    }
+    .accommodations{
+        height: 86vh;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .card-accommodations{
+        padding: 7px 10px;
+    }
+    .accommodations{
+        height: 37em;
+    }
+    .aside-description{
+        padding: 7px 6px;
+    }
+    aside{
+        height: 37em;
+    }
 }
