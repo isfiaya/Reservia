@@ -265,7 +265,7 @@ header{
     flex-direction: row;
 }
 .cards{
-    margin: 20px 20px;
+    margin: 20px 10px 20px 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -438,9 +438,9 @@ header{
     }
     aside{
         
-        width:108%;
+        width:110%;
         height: 37em;
-        margin:0 -4%;
+        margin: 0px 0px 0px -15px;
         order: 3;
         border-radius: 0px;
     }
@@ -453,6 +453,12 @@ header{
     .card-aside{
         box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
         width: 86%;
+    }
+    .navphone{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
     }
 }
 @media only screen and (max-width:767px){
@@ -555,6 +561,7 @@ header{
     }
 .desc_1{
     font-size: x-large;
+    margin-top: revert;
     }
 .desc_2{
     font-size: 18px;
@@ -583,44 +590,41 @@ header{
 }
 .sign-up2{
     display: inline;
-    width: 71px;
-    height:initial;
-    padding: 11px;
     padding-top: 18px;
-    margin-left: 170px;
     color:#1E90FF;
     font-weight: 900;
 }
 .activities-btn{
     border-bottom-color: #ddd;
     border-bottom-style: solid;
-    border-bottom-width: 2px;
-    width: 32%;
+    width: 50%;
     margin: 10px;
     font-size: 14px;
     text-align: center;
 }
 .nav-bar{
-    margin:auto;
+    margin: 0px -15px 0px -15px;
+    width: 107%;
+    justify-content: center;
 }
 .accommodations-btn{
     border-bottom-color: #1E90FF;
     border-bottom-style: solid;
-    border-bottom-width: 2px;
     border-top-style:none;
     font-size: 14px;
     color: #1E90FF;    
-    width: 34%;
+    width: 50%;
     text-align: center;
 }
 .nav-bar ul{
     display: flex;
-    gap:0px;
+    gap:18px;
+    flex-wrap: nowrap;
+    width: 100%;
   
 }
 .nav-bar ul li{
-    padding: 0px 34px 16px 27Px;
-    margin: 24px 0px -11px 0px;
+    margin: 24px -20px 0px 0px;
     font-size: 15px;
 }
 .card-activities{
