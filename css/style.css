@@ -216,13 +216,12 @@ aside{
 }
 footer{
     background-color: 	#ececec;
-    width: 104%;
+    width: 100%;
     height:fit-content;
     grid-area: footer;
     display: flex;
     flex-direction: row;
     margin-bottom: 0px;
-    margin-left: -28px;
 }
 header{
     grid-area: header;
@@ -425,9 +424,9 @@ header{
     footer{
         display:flex;
         flex-direction: column;
-        width: 108%;
+        width: 110%;
         height: auto;
-        margin: -44PX 0px 0px -15px;
+        margin: 14PX 0px 0px -16px;
         order: 6;
         
     }
@@ -458,7 +457,7 @@ header{
 }
 @media only screen and (max-width:767px){
     .activities{
-        height:1435px;
+        height:fit-content;
         display: flex;
         flex-direction: column;
         order: 5;
@@ -469,6 +468,7 @@ header{
         flex-direction: column;
         gap: 40px;
         margin-top: 23px;
+        height: fit-content;
     }
     .card-activities{
         height: 200px;
