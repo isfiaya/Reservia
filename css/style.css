@@ -424,7 +424,7 @@ header{
     footer{
         display:flex;
         flex-direction: column;
-        width: 110%;
+        width: 112%;
         height: auto;
         margin: 14PX 0px 0px -16px;
         order: 6;
@@ -438,7 +438,7 @@ header{
     }
     aside{
         
-        width:110%;
+        width:112%;
         height: 37em;
         margin: 0px 0px 0px -15px;
         order: 3;
@@ -629,9 +629,11 @@ header{
 }
 .card-activities{
     margin: -7PX 5px 0px 5px;
+    width: 102%;
 }
 .card-3v2{
     margin: -7PX 5px 0px 5px;
+    width: 102%;
 }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px)
