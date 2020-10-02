@@ -216,12 +216,13 @@ aside{
 }
 footer{
     background-color: 	#ececec;
-    width: 100%;
+    width: 104%;
     height:fit-content;
     grid-area: footer;
     display: flex;
     flex-direction: row;
     margin-bottom: 0px;
+    margin-left: -26px;
 }
 header{
     grid-area: header;
@@ -501,10 +502,11 @@ header{
     .cards{
         display: flex;
         flex-direction: column;
+        width: 100%;
        
     }
     .card{
-        width: 109%;
+        width: 104%;
         box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
         margin: 10PX 0px 0px -15px;
     }
