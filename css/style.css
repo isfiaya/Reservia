@@ -216,7 +216,7 @@ aside{
 }
 footer{
     background-color: 	#ececec;
-    width: 104%;
+    width: 103%;
     height:fit-content;
     grid-area: footer;
     display: flex;
