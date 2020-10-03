@@ -12,5 +12,5 @@
 ## This mock-up for desktop
 ![desktop](/img/Desktop.png)
 
-## This Mock-Up for Desktop Phone
-![phone](/img/iphone.png)
+## This Mock-Up for Phone
+![phone](/img/iPhone.png)
