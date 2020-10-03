@@ -8,3 +8,6 @@
 - CSS3 Flexbox
 - CSS3 Grid Layout
 - CSS3 Custom Media Queries
+
+## This mock-up for desktop
+![desktop](/img/Desktop.png)
