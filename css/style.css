@@ -584,8 +584,8 @@ header{
     padding: 10px 10px 0px 15px;
     border-radius:12px;
     border:none;
-    height: initial;
     width: 22px;
+    margin-left: -10px;
 }    
 .sign-up{
     display: none;
