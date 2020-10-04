@@ -275,7 +275,7 @@ header{
 }
 .show-more{
     
-    margin: 10px 0 10px 30px;
+    margin: 25px 0 10px 30px;
 }
 .cards-aside{
     display: flex;
@@ -445,9 +445,6 @@ header{
         order: 3;
         border-radius: 0px;
     }
-    .cards-aside{
-        align-items: center;
-    }
     .btn-filter{
         margin: 7px 7px;
     }
@@ -473,19 +470,24 @@ header{
     .cards-activities{
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        margin-top: 23px;
+        gap: 25px;
+        margin: 23px 10px 0 10px;
         height: fit-content;
+        width: 100%;
     }
     .card-activities{
         height: 200px;
         box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
+        margin:auto;
+        width: 100%;
     }
     .card-activities a img{
         height: 75%;
     } 
     .card-3v2{
         box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
+        margin: auto;
+        width: 100%;
     }
 
 }
@@ -503,12 +505,14 @@ header{
         display: flex;
         flex-direction: column;
         width: 100%;
+        gap: 25px;
+        margin: 25px 10px 0 10px;
        
     }
     .card{
-        width: 104%;
+        width: 100%;
+        margin: auto;
         box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
-        margin: 10PX 0px 0px -15px;
     }
     .section-title{
         font-size: large;
@@ -540,10 +544,6 @@ header{
     height: fit-content;
     line-height: 1.3;
     margin-bottom: 22px;
-  }
-  .serach{
-      
-      display: flex;
   }
   .serach img{
       width: 22px;
@@ -628,14 +628,6 @@ header{
 .nav-bar ul li{
     margin: 24px -20px 0px 0px;
     font-size: 15px;
-}
-.card-activities{
-    margin: -7PX 5px 0px 5px;
-    width: 102%;
-}
-.card-3v2{
-    margin: -7PX 5px 0px 5px;
-    width: 102%;
 }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px)
