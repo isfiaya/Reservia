@@ -12,33 +12,36 @@
 <body>
     <div class="container">
          <!--nav bar-->
-        <nav>
+                     <!--
+
             <div class="navphone">
             <div class="logo">
                 <img src="img/Reservia.svg" alt="Reservia">
             </div>
             <span class="sign-up2"><a href="#">Sign Up</a></span>
         </div>
-            <div class="nav-bar">
-                <ul>
-                    <li class="accommodations-btn"> <a href="#accommodations">Accommodations</a> </li>
-                    <li class="activities-btn"> <a href="#activities">Activities</a> </li>
-                    <li> <span class="sign-up"><a href="#">Sign Up</a></span> </li>
-                </ul>
-            </div>
+        -->
+        <nav>
+            
+                <img src="img/Reservia.svg" alt="Logo Reservia">
+            
+            <ul>
+                <li class="accommodations-btn"> <a href="#accommodations">Accommodations</a> </li>
+                <li class="activities-btn"> <a href="#activities">Activities</a> </li>
+                <li class="sign-up"><a href="#">Sign Up</a> </li>
+            </ul>    
         </nav>
+
         <header>
         <!--description--> 
-        <div class="description">
-            <h3 class="desc_1">Find a place for your dream vacation</h3>
-            <h6 class="desc_2">Downtown or in nature</h6> 
-        </div>
+            <h3>Find a place for your dream vacation</h3>
+            <h6>Downtown or in nature</h6> 
         <!--search bar--> 
         
-            <form class="serach">
-                <img src="img/location.svg" alt="">
-                <input type="text" value="Marseille,France" class="input" name="search">
-                <input type="submit" value="Serach" class="serach-btn1">
+            <form name="serach">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" placeholder="Marseille,France">
+                <input type="submit" value="Search">
                 <i class="fas fa-search"></i>
             </form>
 
@@ -46,51 +49,45 @@
         
              <!--filtre bar-->
             <div class="filter-bar">
-                <h3 class="filter">Filters</h3>
-                <div class="buttons">
-                    <button class="btn-filter">
-                        <span class="tag">
-                        <span class="tag-icon">
-                            <i class="fas fa-money-bill-wave fa-1x" aria-hidden="true"></i>
-                        </span>
-                    <span class="tag-content">Low cost</span>
-                </span>
-            </button>
-            <button class="btn-filter">
-                <span class="tag">
+                <h3>Filters</h3>
+                <div class="btns-filters">
+                <button class="btn-filter">
+                    <i class="fas fa-money-bill-wave fa-1x" aria-hidden="true"></i>
+                    <span>Low cost</span>
+                </button>
+
+                <button class="btn-filter">
+                     <i class="fas fa-child"></i>
+                    <span>Family-friendly</span>
+                </button>
+
+                <button class="btn-filter">
+                
                     
-                    <span class="tag-icon">
-                        <i class="fas fa-child"></i>
-                    </span>
-                    <span class="tag-content">Family-friendly</span>
-                   
-                </span>
-            </button>
-            <button class="btn-filter">
-                <span class="tag">
-                    <span class="tag-icon">
                         <i class="fas fa-heart"></i>
-                    </span>
-                    <span class="tag-content">Romantic</span>
-                </span>
-            </button>
-            <button class="btn-filter">
-                <span class="tag">
-                    <span class="tag-icon">
+                    
+                    <span>Romantic</span>
+                
+                </button>
+
+                <button class="btn-filter">
                         <i class="fas fa-dog"></i>
-                    </span>
-                    <span class="tag-content">Pets allowed</span>
-                </span>
+                    <span>Pets allowed</span>
+                
             </button>
         </div>
+        
             </div>
             <div class="info">
-                <span class="info-icon"><i class="fas fa-info"></i></span>
-                <span class="info-content">More than 500 accommodations are avaible in this city</span>
+                <span class="icon-info">
+                <i class="fas fa-info"></i>
+                </span>
+                
+                <span>More than 500 accommodations are avaible in this city</span>
             </div>
         </header>
         <section class="accommodations" id="accommodations">
-               <h3 class="section-title acc_title">Accommodations in Marseille</h3>
+               <h3 class="section-title">Accommodations in Marseille</h3>
                <div class="cards">
                    
                <div class="card"><a href="#0"><img src="img/card1.jpg" alt="">
@@ -185,10 +182,10 @@
 
         </section>
         <aside>
-            <span class="section-title title-aside">
-                Most Popular
+            <div class="section-title section-title-aside">
+                <h3>Most Popular</h3> 
                 <i class="fas fa-chart-line"></i>
-            </span>
+            </div>
             
             <div class="cards-aside">
             <div onclick="location.href='#0';" style="cursor: pointer;" class="card-aside">
@@ -239,7 +236,7 @@
         
         </aside>          
         <section class="activities" id="activities">
-            <h3 class="section-title-3">Activities in Marseille</h3>
+            <h3 class="section-title">Activities in Marseille</h3>
             <div class="cards-activities">
             <div class="card-activities item1"><a href="#0"><img src="img/act1.jpg" alt="">
                 <div class="activities-description">
