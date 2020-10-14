@@ -33,7 +33,7 @@ nav ul{
 nav ul li{
     float: left;
     list-style-type: none;
-    padding: 12px 0px;
+    padding: 12px 10px;
     margin-left: 50px;
     font-size: 14px;
 }
@@ -41,12 +41,15 @@ nav ul li{
     color:#1E90FF;
     font-weight: bold;
 }
-.sign-up2{
-    display: none;
-}
 a{
     text-decoration: none;
     color: inherit;
+}
+.accommodations-btn{
+    color: #1E90FF;
+    border-top-color: #1E90FF;
+    border-top-style: solid;
+    border-top-width: thin;
 }
 header{
     grid-area: header;
