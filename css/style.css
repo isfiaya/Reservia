@@ -22,10 +22,11 @@
 /*Nav Bar*/
 nav {
   grid-area: nav;
-  margin: 15px;
+  margin: 15px 40px;
 }
 nav img {
   float: left;
+  padding-top: 20px;
 }
 nav ul {
   float: right;
@@ -33,9 +34,10 @@ nav ul {
 nav ul li {
   float: left;
   list-style-type: none;
-  padding: 12px 10px;
+  padding: 35px 11px 12px 11px;
   margin-left: 50px;
-  font-size: 14px;
+  font-weight: 500;
+  border-top: white solid 1px;
 }
 .sign-up a {
   color: #1e90ff;
@@ -47,19 +49,17 @@ a {
 }
 .accommodations-btn {
   color: #1e90ff;
-  border-top-color: #1e90ff;
-  border-top-style: solid;
-  border-top-width: thin;
+  border-top: #0065fc solid 1px;
 }
 header {
   grid-area: header;
-  margin: 15px;
+  margin: 15px 40px;
   order: 2;
 }
 header h6 {
   font-size: small;
-  font-weight: 500;
-  line-height: 2;
+  line-height: 3;
+  opacity: 60%;
 }
 /*Search Bar*/
 form {
@@ -67,9 +67,13 @@ form {
   display: flex;
   flex-wrap: nowrap;
 }
+.placeholder::-webkit-input-placeholder{
+    font-weight: 800;
+    color:black;
+}
 form > input,
 form i:first-child {
-  border: #ececec solid 2px;
+  border: #ececec solid 1px;
   padding: 13px;
   outline: none;
 }
@@ -88,6 +92,7 @@ form input:nth-child(3) {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  font-weight: 700;
   border: none;
 }
 
@@ -111,22 +116,27 @@ form input:nth-child(3) {
   outline: none;
   background-color: white;
   transition: background-color, transform 0.5s ease-in-out;
+  height: 45px;
+  position: relative;
 }
 .btn-filter:hover {
   background-color: #1e90ff;
   transform: scale(1.15);
 }
 .filter-bar i {
-  padding: 15px;
+  padding: 16px;
   border-radius: 50%;
   display: inline-block;
   background-color: #deebff;
   color: #0065fc;
+  position: absolute;
+  left: -10px;
+  top: -1px;
 }
 .filter-bar span {
-  padding: 0 15px;
-  font-size: large;
+  padding: 0px 15px 0 51px;
   font-weight: bold;
+  font-size: larger;
 }
 
 .info i {
@@ -141,18 +151,24 @@ form input:nth-child(3) {
   align-items: center;
   gap: 10px;
 }
+.info span:nth-child(2){
+    font-weight:500;
+}
 
 .accommodations {
-  width: 95%;
+  width: 90%;
   height: fit-content;
-  margin-left: 15px;
+  margin-left: 40px;
   background-color: #ececec;
   border-radius: 20px;
   grid-area: accommodations;
 }
 .section-title {
-  margin: 30px 0 5px 30px;
+  margin: 30px 0 20px 30px;
   font-weight: 700;
+}
+.empty{
+    color: #ccc;
 }
 .section-title-aside {
   width: 85%;
@@ -162,37 +178,39 @@ form input:nth-child(3) {
 }
 .section-title i {
   float: right;
+  font-size: x-large;
 }
 aside {
-  margin-right: 15px;
+  margin-right: 40px;
   background-color: #ececec;
   border-radius: 20px;
   grid-area: aside;
 }
 .cards-aside {
-  margin-top: 30px;
+  margin: 0 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  gap: 33px;
 }
 
 .activities {
-  margin: 15px;
+  margin: 15px 40px;
   grid-area: activities;
+}
+.activities h3{
+  margin-left: 0;
 }
 footer {
   background-color: #ececec;
   grid-area: footer;
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .card {
-  width: 30%;
+  width: 29.9%;
   background-color: white;
   border-radius: 20px;
-  margin: 10px 0px;
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
   height: 200px;
   transition: box-shadow 0.5s ease-in-out;
@@ -205,31 +223,35 @@ footer {
   padding: 3px;
 }
 .card-accommodations {
-  padding: 3px 0px 0 10px;
+  padding: 0px 0px 0px 15px;
   line-height: 1.5;
 }
 .aside-description {
   display: flex;
   flex-direction: column;
-  padding: 5px 13px;
+  padding: 5px 20px 5px 15px;
   justify-content: space-between;
+  position: relative;
+}
+.aside-description p{
+  position: absolute;
+  top: 50px;
 }
 .stars {
   display: flex;
   flex-direction: row;
 }
 .cards {
-  margin: 20px 0;
+  margin: 0 25px 40px 35px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  gap: 30px;
+  
 }
 .show-more {
-  margin: 25px 0 10px 30px;
+  margin: 0px 0 40px 30px;
 }
 .card-aside {
-  width: 90%;
   height: 140px;
   background-color: white;
   border-radius: 20px;
@@ -250,7 +272,6 @@ footer {
 }
 
 .cards-activities {
-  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: 1.2fr 1fr;
@@ -260,14 +281,13 @@ footer {
 }
 .card-activities {
   background-color: white;
-  margin: 0px 20px;
   border-radius: 20px;
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
   transition: box-shadow 0.5s ease-in-out;
 }
 .card-activities a img {
   width: 100%;
-  height: 85%;
+  height: 88%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -291,9 +311,11 @@ footer {
   width: 30%;
   padding: 30px;
   line-height: 2;
+  margin: 10px 0 13px 15px;
 }
 .item1 {
   grid-area: item1;
+  margin-right: 30px;
 }
 .item2 {
   grid-area: item2;
@@ -303,6 +325,7 @@ footer {
 }
 .item4 {
   grid-area: item4;
+  margin: 0 30px;
 }
 .item5 {
   grid-area: item5;
@@ -339,11 +362,17 @@ footer {
     display: flex;
     flex-direction: column;
     order: 6;
+    margin-top: 25px;
+    padding-bottom: 30px;
   }
 
   .section-title-3 {
     font-size: large;
     margin: 3px 0 6px 0px;
+  }
+  .section-title-aside{
+    margin-left: 15px;
+    width: 92%;
   }
   aside {
     order: 3;
@@ -351,11 +380,12 @@ footer {
     margin: 0;
   }
   .cards-aside {
-    margin: 22px 10px 30px 10px;
+    margin: 0px 20px 40px 20px;
+    gap: 15px;
   }
   .card-aside {
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
-    width: 86%;
+    
   }
 }
 @media only screen and (max-width: 767px) {
@@ -363,12 +393,17 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 0px;
+    margin-top: 40px;
     order: 5;
+  }
+  .activities h3{
+    margin: 0 0 0 20px;
+    font-size: 20px;
   }
   .cards-activities {
     display: flex;
     flex-direction: column;
-    margin: 22px 30px;
+    margin: 20px 20px;
     gap: 25px;
   }
   .card-activities {
@@ -393,10 +428,15 @@ footer {
     background-color: #fff;
     order: 4;
   }
+  .accommodations h3 {
+      font-size: 20px;
+      margin-left: 20px;
+  }
   .cards {
     display: flex;
     flex-direction: column;
-    margin: 22px 30px;
+    margin: 0px 20px;
+    GAP: 15px;
   }
   .card {
     width: 100%;
@@ -405,6 +445,9 @@ footer {
   }
   .section-title {
     font-size: large;
+  }
+  .show-more{
+    margin: 30px 0 0px 20px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -423,12 +466,13 @@ footer {
   .btns-filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     margin-left: 0px;
   }
   .footer-content {
     width: fit-content;
-    padding: 30px 0 0 30px;
+    padding: 0px 0 0 0px;
+    margin: 30px 0 0px 20px;
   }
   .serach i {
     display: inline;
@@ -444,8 +488,9 @@ footer {
   }
   .sign-up {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 20px;
+    padding-top: 0;
   }
   .accommodations-btn,
   .activities-btn {
@@ -472,6 +517,7 @@ footer {
     position: absolute;
     top: 5px;
     left: 10px;
+    padding-top: 0px;
   }
   form i:last-child {
     display: inline;
@@ -491,36 +537,39 @@ footer {
     order: 4;
     width: auto;
     margin-right: 15px;
+    margin-left: 15px;
   }
   .btns-filters {
     display: flex;
-    margin: 10px 0 0 0px;
+    margin: 10px 0 0 10px;
+  }
+  nav{
+      margin: 15px;
+  }
+  header{
+      margin: 15px;
   }
   aside {
     order: 3;
     margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 10px;
   }
   .cards-aside {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-top: 0;
+    margin: 0 10px;
   }
   .section-title-aside {
     width: 95%;
   }
   .section-title {
-    margin: 15px 0px 10px 20px;
+    margin: 15px 0px 15px 20px;
   }
   .aside-description {
     padding: 0px 8px;
-    justify-content: space-around;
     font-size: smaller;
-  }
-  .cards {
-    margin: 0px;
-    gap: 13px;
   }
   .card {
     box-shadow: 1px 8px 6px -6px black;
@@ -543,13 +592,16 @@ footer {
   }
   .activities {
     order: 5;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .activities-description {
     font-size: smaller;
-    padding: 5px 0 0 5px;
+    padding: 8px 5px 5px 15px;
   }
   footer {
     order: 6;
+    margin-top: 25px;
   }
   .footer-content {
     margin: 14px 25px;
