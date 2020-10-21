@@ -3,6 +3,8 @@
 # Reservia: Rental Marketplace
 *Transform mockup into responsive one-page HTML/CSS static template*
 
+[My web page hosted online on GitHub Pages](https://isfiaya.github.io/Reservia/)
+
 ## I used
 - HTML5 Semantic Tags
 - CSS3 Flexbox
@@ -15,5 +17,3 @@
 ## This Mock-Up for Phone
 ![phone](/img/iPhone.png)
 
-## The link
-[a link](isfiaya.github.io/reservia/)
