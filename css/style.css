@@ -186,6 +186,9 @@ aside {
   border-radius: 20px;
   grid-area: aside;
 }
+.price__2{
+    display: none;
+}
 .cards-aside {
   margin: 0 30px;
   display: flex;
@@ -229,17 +232,14 @@ footer {
 .aside-description {
   display: flex;
   flex-direction: column;
-  padding: 5px 20px 5px 15px;
-  justify-content: space-between;
-  position: relative;
+  padding: 0px 0px 0px 10px;
+  justify-content: space-around;
 }
-.aside-description p{
-  position: absolute;
-  top: 50px;
-}
+
 .stars {
   display: flex;
   flex-direction: row;
+  margin-top: 4px;
 }
 .cards {
   margin: 0 25px 40px 35px;
@@ -273,8 +273,10 @@ footer {
 
 .cards-activities {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 1.2fr 1fr;
+  grid-template-columns: repeat(4, 22%);
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 4%;
+  GRID-ROW-GAP: 25PX;
   grid-template-areas:
     "item1 item2 item4 item5"
     "item1 item3 item4 item6";
@@ -315,7 +317,6 @@ footer {
 }
 .item1 {
   grid-area: item1;
-  margin-right: 30px;
 }
 .item2 {
   grid-area: item2;
@@ -325,7 +326,6 @@ footer {
 }
 .item4 {
   grid-area: item4;
-  margin: 0 30px;
 }
 .item5 {
   grid-area: item5;
@@ -415,8 +415,7 @@ footer {
     height: 75%;
   }
   .card-3v2 {
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
-    margin: 0;
+    box-shadow:0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
   }
 }
 @media only screen and (max-width: 767px) {
@@ -454,14 +453,33 @@ footer {
   nav {
     order: 1;
     display: flex;
-    height: fit-content;
     flex-wrap: wrap;
     margin: 0px;
     position: relative;
-    height: 110px;
+    height: 120px;
   }
   header {
-    margin: 25px 15px;
+    margin: 30px 15px;
+  }
+  .price__1{
+      display: none;
+  }
+  .price__2{
+      display: inline;
+  }
+  .stars{
+      margin-top: 5px;
+  }
+  header h3{
+    font-size: 23px;
+  }
+  header h6{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 80%;
+  }
+  .filter-bar h3{
+      font-size: large;
   }
   .btns-filters {
     display: flex;
@@ -496,7 +514,6 @@ footer {
   .activities-btn {
     width: 50%;
     margin: 0px;
-    font-size: 17px;
     text-align: center;
     bottom: 0px;
     position: absolute;
@@ -507,7 +524,7 @@ footer {
     right: 0px;
   }
   .accommodations-btn {
-    border-bottom-color: #1e90ff;
+    border-bottom-color: #0065fc;
     border-bottom-style: solid;
     border-top-style: none;
     color: #1e90ff;
@@ -531,7 +548,7 @@ footer {
     display: none;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1211px) {
   .accommodations {
     height: fit-content;
     order: 4;
@@ -553,13 +570,13 @@ footer {
     order: 3;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   .cards-aside {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin: 0 10px;
+    margin: 0 10px 15px 10px;
   }
   .section-title-aside {
     width: 95%;
@@ -568,13 +585,8 @@ footer {
     margin: 15px 0px 15px 20px;
   }
   .aside-description {
-    padding: 0px 8px;
     font-size: smaller;
   }
-  .card {
-    box-shadow: 1px 8px 6px -6px black;
-  }
-
   .card-aside {
     width: 30%;
     height: 107px;
@@ -596,8 +608,8 @@ footer {
     margin-right: 15px;
   }
   .activities-description {
-    font-size: smaller;
-    padding: 8px 5px 5px 15px;
+    font-size: 12px;
+    padding: 6px 0px 0px 10px;
   }
   footer {
     order: 6;
